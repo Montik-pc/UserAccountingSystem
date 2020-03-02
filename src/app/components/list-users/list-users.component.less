@@ -1,0 +1,119 @@
+.container-users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  min-width: 1200px;
+  height: 100%;
+  margin: auto;
+
+  .container-users-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  .container-users-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 0;
+
+    #button-getUsers,
+    #button-sortUsers {
+      width: 200px;
+      height: 30px;
+      font-weight: 600;
+      font-size: 20px;
+      box-shadow: 0 0 5px 2px black;
+      border-radius: 7px;
+      background-color: grey;
+      cursor: pointer;
+
+      .fa {
+        margin: 0 8px;
+      }
+    }
+
+    #button-getUsers {
+      margin-left: 9%;
+      font-weight: bold;
+    }
+
+    #button-sortUsers {
+      margin-left: 3%;
+    }
+
+    #button-getUsers:hover,
+    #button-sortUsers:hover {
+      color: white;
+    }
+
+    .form-group {
+      width: 200px;
+      margin-left: 20%;
+    }
+
+    .form-control {
+      height: 24px;
+      font-weight: 600;
+      font-size: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 0 0 5px 2px black;
+      border-radius: 7px;
+    }
+
+    .fa-search {
+      position: relative;
+      margin-left: 63px;
+      top: 9px;
+      cursor: pointer;
+    }
+
+    .message {
+      position: relative;
+      width: 400px;
+      height: 30px;
+      margin-left: 60px;
+      font-weight: 600;
+      font-size: 20px;
+      box-shadow: 0 0 5px 2px black;
+      border-radius: 4px;
+      background-color: palevioletred;
+
+      .message-text,
+      .message-name {
+        position: relative;
+        display: inline-block;
+        top: 4px;
+        height: 100%;
+        margin-left: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .message-name {
+        width: 60%;
+      }
+
+      .button-close {
+        position: absolute;
+        right: 5px;
+        font-size: 20px;
+        border: none;
+        background-color: palevioletred;
+      }
+    }
+  }
+
+  .container-users-list {
+    padding: 0;
+  }
+}
+
+.noUsers {
+  text-align: center;
+}

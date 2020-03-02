@@ -1,0 +1,117 @@
+.container-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  min-width: 500px;
+  height: 70%;
+  min-height: 470px;
+  margin: auto;
+  box-shadow: 0 0 5px 2px black;
+  border-radius: 7px;
+  background-color: gray;
+
+  .container-user-avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    min-height: 138px;
+    margin-bottom: 15px;
+  }
+
+  #button-save {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 7px;
+    background-color: grey;
+    cursor: pointer;
+
+    .fa {
+      margin-bottom: 10px;
+    }
+  }
+
+  #button-save:hover {
+    color: white;
+  }
+
+  .container-user-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    height: 65%;
+    padding-top: 15px;
+    border-radius: 7px;
+    background-color: rgb(173, 170, 170);
+
+    form {
+      width: 90%;
+    }
+
+    .form-group {
+      margin-top: 7px;
+      margin-left: 10%;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    #user-id {
+      margin-left: 79px;
+    }
+
+    #user-first-name {
+      margin-left: 4px;
+    }
+
+    #user-last-name {
+      margin-left: 8px;
+    }
+
+    #user-email {
+      margin-left: 48px;
+    }
+
+    #user-avatar {
+      margin-left: 40px;
+    }
+
+    .form-group-note {
+      margin-top: 15px;
+      margin-left: 10%;
+      margin: 15px 0 15px 10%;
+      font-size: 20px;
+      font-weight: 600;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    #user-note {
+      width: 100%;
+      height: 80px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .form-control {
+      width: 68%;
+      height: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

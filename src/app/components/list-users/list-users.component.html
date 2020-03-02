@@ -1,0 +1,39 @@
+<div class="container-users">
+  <h1 class="container-users-title">List of users</h1>
+  <div class="container-users-control">
+    <button id="button-getUsers" (click)="getUsers()" title="Download User data from the server">
+      <i class="fa fa-database" aria-hidden="true"></i>
+      Get Users List
+    </button>
+    <button id="button-sortUsers" (click)="sortUsers()">
+      <i class="fa" aria-hidden="true"
+      [ngClass]="{'fa-sort': noSort, 'fa-sort-alpha-asc': sortAZ, 'fa-sort-alpha-desc': sortZA}"
+      ></i>
+      Sort Users List
+    </button>
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control" id="user-last-name" placeholder=" Enter last name" name="last-name"
+          [(ngModel)]= "last_name">
+      </div>
+    </form>
+    <i class="fa fa-search fa-lg" (click)="searchUser(last_name)"></i>
+    <div class="message" *ngIf="message">
+      <span class="message-text">Not found</span><span class="message-name">{{message}}</span>
+        <button type="button" class="button-close" (click)="message = false">
+          <i class="fa fa-times"></i>
+        </button>
+    </div>
+  </div>
+  <ul class="container-users-list">
+    <app-item-user
+      *ngFor="let i of users"
+      [user] = "i"
+      (onDelete)="deleteUserById($event)"
+    >
+    </app-item-user>
+  </ul>
+  <div *ngIf="users?.length === 0" class="noUsers">
+    <h1 >The User list is empty.</h1>
+  </div>
+</div>

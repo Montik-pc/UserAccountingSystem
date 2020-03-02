@@ -1,0 +1,9 @@
+<li class="container-user">
+  <p [routerLink]="['/user', user.id]">
+    <span class="text-id">ID: {{user.id}}</span>
+    <span class="text-name">{{user.last_name}} {{user.first_name}}</span>
+  </p>
+  <a>
+    <i class="fa fa-trash-o fa-lg" (click)="deleteUser(user.id)"></i>
+  </a>
+</li>

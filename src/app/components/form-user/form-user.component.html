@@ -1,0 +1,40 @@
+<div class="container-user">
+  <div class="container-user-avatar">
+    <img src="{{user.avatar}}">
+    <h1 class="user-title">User Id: {{user.id}}</h1>
+    <button id="button-save" (click)="editUser()" routerLink="/users">
+      <i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i><br>
+      Edit User
+    </button>
+  </div>
+  <div class="container-user-info">
+    <form [formGroup]="formUser">
+      <div class="form-group">
+        <label for="first-name">First-name:</label>
+        <input type="text" class="form-control" id="user-first-name" placeholder="User first name" name="first-name"
+          formControlName="first_name">
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last-name:</label>
+        <input type="text" class="form-control" id="user-last-name" placeholder="User last name" name="last-name"
+          formControlName="last_name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="user-email" placeholder="User email" name="email"
+          formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="avatar">Avatar:</label>
+        <input type="avatar" class="form-control" id="user-avatar" placeholder="User avatar" name="avatar"
+          formControlName="avatar"
+          [(ngModel)]="user.avatar">
+      </div>
+      <div class="form-group-note">
+        <label for="note">Note:</label>
+        <p><textarea type="text"  id="user-note" name="note"
+          formControlName="note"></textarea></p>
+      </div>
+    </form>
+  </div>
+</div>

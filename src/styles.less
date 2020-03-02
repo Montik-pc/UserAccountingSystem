@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+
+  app-root,
+  app-form-user {
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    margin:0;
+
+    .loading {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
+---------------------------------***********************************---------------------------------
+---------------------------------***********************************---------------------------------
+
+## Application installation
+
+1. Download UserAccountingSystem application.
+2. Install Node.js.
+3. In the root directory of the UserAccountingSystem application, run the command `npm install`.
+
+## Application run
+
+1. In the root directory of the UserAccountingSystem application, run the command `npm start`.
+2. Launch the application at navigate to `http://localhost:4200/`
+
+---------------------------------***********************************---------------------------------
+---------------------------------***********************************---------------------------------
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
